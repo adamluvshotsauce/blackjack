@@ -36,7 +36,7 @@ class Hand:
 
     def handle_aces(self):
         self.show_all()
-        return int(input("What do you like the value of your Ace to be? 1 or 11: \n"))
+        return int(input("What would you like the value of your Ace to be? 1 or 11: \n"))
 
     def show_all(self):
         print('\nPlayer\'s cards in hand are: \n   ' + '\n   '.join(map(str, [str(card) + ' ('+ str(card.value) + ')' for card in self.cards])))
